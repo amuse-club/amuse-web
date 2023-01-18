@@ -81,12 +81,19 @@
 								onclick="$('#amuse-projects').goTo();return false;">業務概要</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#amuse-info"
+								onclick="$('#amuse-info').goTo();return false;">技術紹介</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#amuse-topics"
 								onclick="$('#amuse-topics').goTo();return false;">お知らせ</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#amuse-aboutus"
 								onclick="$('#amuse-aboutus').goTo();return false;">会社概要</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./recruit/index.html">採用情報</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="https://blog.amuse-club.jp">ブログ</a>
@@ -101,15 +108,19 @@
 					建設コンサルタントとして、寒冷地における建設技術を中心とした企画・調査・計画・設計業務を行っております。
 				</p>
 				<p>
-					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-25" data-wow-delay="0.75s"
+					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-25" data-wow-delay="0.65s"
 						onclick="$('#amuse-projects').goTo();return false;">業務概要</button>
+					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-25" data-wow-delay="0.75s"
+						onclick="$('#amuse-info').goTo();return false;">技術紹介</button>
 					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-25" data-wow-delay="0.85s"
 						onclick="$('#amuse-topics').goTo();return false;">お知らせ</button>
-					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-25" data-wow-delay="0.95s"
-						onclick="$('#amuse-aboutus').goTo();return false;">会社概要</button>
 				</p>
 				<p>
-					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-75" data-wow-delay="1.05s"
+					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-25" data-wow-delay="0.95s"
+						onclick="$('#amuse-aboutus').goTo();return false;">会社概要</button>
+					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-25" data-wow-delay="1.05s"
+						onclick="location.href='./recruit/index.html'">採用情報</button>
+					<button class="btn btn-md download-btn-first animated wow fadeInLeft w-25" data-wow-delay="1.15s"
 						onclick="location.href='https://blog.amuse-club.jp'">ブログ</button>
 				</p>
 			</div>
@@ -150,16 +161,25 @@
 			</div>
 		</div>
 
-		<div class="curved-bg-div wow animated fadeIn" data-wow-delay="0.15s"></div>
+		<div class="curved-bg-div wow animated fadeIn waku" data-wow-delay="0.15s"></div>
 
-		<div class="amuse-projects2-outer">
+
+		<!-- ==========================================================================================================
+													  技術紹介
+		 ========================================================================================================== -->
+
+		 <div id="amuse-info" class="amuse-projects2-outer">
+	
 			<div class="container">
 
-				<div class="row amuse-projects2-grid-columns">
+				<h1>技術紹介</h1>
+				<small>特に力を入れている技術をご紹介します。</small>
 
+				<div class="row amuse-projects2-grid-columns">
+	
 					<div class="col-sm-6 in-order-1 wow animated fadeInLeft" data-wow-delay="0.22s">
 						<div class="col-sm-image-container">
-							<img class="img-float-left img-fluid rounded" src="img/drone.png" alt="ドローンを活用した陸上３次元計測">
+							<img class="img-float-left img-fluid rounded" src="./projects/img/drone/drone.png" alt="ドローンを活用した陸上３次元計測">
 						</div>
 					</div>
 
@@ -172,32 +192,33 @@
 					<div class="col-sm-6 in-order-3 sm-6-content wow animated fadeInLeft" data-wow-delay="0.22s">
 						<h1>マルチビームを活用した水中３次元計測</h1>
 						<p>マルチビーム測深システムによる水中測量を行い、点群データを作成します。水中地形の３次元化が可能です。</p>
-						<a href="mb.html" class="btn btn-primary" role="button"
+						<a href="./projects/mb.html" class="btn btn-primary" role="button"
 							aria-pressed="true">マルチビームについての詳細はこちら</a>
 						<hr />
 					</div>
 
 					<div class="col-sm-6 in-order-4 wow animated fadeInRight" data-wow-delay="0.22s">
-						<img class="img-float-right img-fluid rounded" src="img/mb/mb.png" alt="マルチビームを活用した水中３次元計測">
+						<img class="img-float-right img-fluid rounded" src="./projects/img/mb/mb.png" alt="マルチビームを活用した水中３次元計測">
 					</div>
 
 					<div class="col-sm-6 in-order-5 wow animated fadeInLeft" data-wow-delay="0.22s">
 						<div class="col-sm-image-container">
-							<img class="img-float-left img-fluid rounded" src="img/sd/diveunit300.png" alt="水中ドローンによる水中可視化ソリューション">
+							<img class="img-float-left img-fluid rounded" src="./projects/img/sd/diveunit300.png" alt="水中ドローンによる水中可視化ソリューション">
 						</div>
 					</div>
 					<div class="col-sm-6 in-order-6 sm-6-content wow animated fadeInRight" data-wow-delay="0.22s">
 						<h1>水中ドローンによる水中可視化ソリューション</h1>
 						<p>水深３００メートルまで潜行可能な産業用水中ドローンによって、水中の映像データを取得します。マルチビームで取得した３次元データと連携し、さらなる水中可視化が可能となります。</p>
-						<a href="sd.html" class="btn btn-primary" role="button"
+						<a href="./projects/sd.html" class="btn btn-primary" role="button"
 							aria-pressed="true">水中ドローンについての詳細はこちら</a>
 						<hr />
 					</div>
 
 				</div> <!-- row -->
-
 			</div>
 		</div>
+
+		<div class="curved-bg-div2 wow animated fadeIn waku" data-wow-delay="0.15s"></div>
 
 		<!-- ==========================================================================================================
 													  お知らせ
@@ -249,11 +270,11 @@
 								</tr>
 								<tr>
 									<th>連絡先</th>
-									<td>TEL:011-299-1082　FAX:011-299-1128</td>
+									<td>TEL:011-299-1082 FAX:011-299-1128</td>
 								</tr>
 								<tr>
 									<th>代表者</th>
-									<td>代表取締役社長　川浦広樹</td>
+									<td>代表取締役社長 川浦広樹</td>
 								</tr>
 								<tr>
 									<th>設　立</th>
@@ -291,11 +312,17 @@
 								<a href="#" onclick="$('#amuse-projects').goTo();return false;">
 									<li>業務概要</li>
 								</a>
+								<a href="#" onclick="$('#amuse-info').goTo();return false;">
+									<li>技術紹介</li>
+								</a>
 								<a href="#" onclick="$('#amuse-topics').goTo();return false;">
 									<li>お知らせ</li>
 								</a>
 								<a href="#" onclick="$('#amuse-aboutus').goTo();return false;">
 									<li>会社概要</li>
+								</a>
+								<a href="./recruit/index.html">
+									<li>採用情報</li>
 								</a>
 								<a href="https://blog.amuse-club.jp">
 									<li>ブログ</li>
